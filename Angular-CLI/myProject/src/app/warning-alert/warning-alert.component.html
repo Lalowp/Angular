@@ -1,0 +1,12 @@
+<div class="alert alert-warning" role="alert">
+    warning-alert works!
+</div>
+<div>
+    <!--     <button class="btn btn-primary" (click)="press = !press">Show details</button>
+    <p *ngIf="press">Password = tuna</p> -->
+    <button class="btn btn-primary" (click)="showDetails()">Show details</button>
+    <p *ngIf="press">Password = tuna</p>
+    <div *ngFor="let logItem of log; let i = index" [ngStyle]="{backgroundColor: i >=4 ? 'blue': 'transparent'}"
+        [ngClass]="{'white-text':i >=4}">
+        {{ logItem }}</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="alert alert-success" role="alert">
+    Success Alert!
+</div>
+<div>
+    <label>Write your username</label>
+    <input type="text" class="form-control" (input)="userName($event)">
+    <p>{{ username }}</p>
+    <!-- Button for reseting username-->
+    <button class="btn btn-primary" [disabled]="username === ''" (click)="resetU()">
+        Reset Username
+    </button>
+</div>
